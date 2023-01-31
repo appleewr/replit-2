@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # The URL of the script project is:
-# https://github.com/wy580477/replit-trojan
+# https://github.com/wy580477/replit-troja
 # https://github.com/XTLS/Xray-install
 
 FILES_PATH=${FILES_PATH:-./}
@@ -130,12 +130,6 @@ yellow "二维码如下"
 qrencode -t ansiutf8 ${replit_xray_vmess}
 echo
 green "安装完毕"
-echo
-echo "了解Replit，关注甬哥侃侃侃
-23.1.7更新：path路径增加变量值，与uuid相同。访问域名显示为404
-23.1.20更新：集成每10分钟自动唤醒功能
-视频教程：https://www.youtube.com/@ygkkk
-博客地址：https://ygkkk.blogspot.com"
 echo
 while true; do
 curl https://${REPL_SLUG}.${REPL_OWNER}.repl.co;sleep 600
